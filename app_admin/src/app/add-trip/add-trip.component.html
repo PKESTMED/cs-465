@@ -1,0 +1,79 @@
+<div class="col-md-3">
+  <h2 class="text-center">Add Trip</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label>Code:</label>
+      <input type="text" formControlName="code" placeholder="Code" class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && f.code.errors }">
+      <div *ngIf="submitted && f.code.errors">
+        <div *ngIf="f.code.errors.required">Trip Code is required</div>
+      </div>
+  </div>
+
+  <div class="form-group">
+  <label>Name:</label>
+  <input type="text" formControlName="name" placeholder="Name" class="form-control"
+  [ngClass]="{ 'is-invalid': submitted && f.name.errors }">
+  <div *ngIf="submitted && f.name.errors">
+  <div *ngIf="f.name.errors.required">Name is required</div>
+  </div>
+  </div>
+ 
+  <div class="form-group">
+    <label>Code:</label>
+    <input type="text" formControlName="code" placeholder="Code" class="form-control"
+      [ngClass]="{ 'is-invalid': submitted && f.code.errors }">
+    <div *ngIf="submitted && f.code.errors">
+      <div *ngIf="f.code.errors.required">Lenght is required</div>
+    </div>
+</div>
+
+<div class="form-group">
+  <label>Code:</label>
+  <input type="text" formControlName="code" placeholder="Code" class="form-control"
+    [ngClass]="{ 'is-invalid': submitted && f.code.errors }">
+  <div *ngIf="submitted && f.code.errors">
+    <div *ngIf="f.code.errors.required">Start Date is required</div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label>Code:</label>
+  <input type="text" formControlName="code" placeholder="Code" class="form-control"
+    [ngClass]="{ 'is-invalid': submitted && f.code.errors }">
+  <div *ngIf="submitted && f.code.errors">
+    <div *ngIf="f.code.errors.required">Resort is required</div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label>Code:</label>
+  <input type="text" formControlName="code" placeholder="Code" class="form-control"
+    [ngClass]="{ 'is-invalid': submitted && f.code.errors }">
+  <div *ngIf="submitted && f.code.errors">
+    <div *ngIf="f.code.errors.required">Per Person Amount is required</div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label>Code:</label>
+  <input type="text" formControlName="code" placeholder="Code" class="form-control"
+    [ngClass]="{ 'is-invalid': submitted && f.code.errors }">
+  <div *ngIf="submitted && f.code.errors">
+    <div *ngIf="f.code.errors.required">Image is required</div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label>Code:</label>
+  <input type="text" formControlName="code" placeholder="Code" class="form-control"
+    [ngClass]="{ 'is-invalid': submitted && f.code.errors }">
+  <div *ngIf="submitted && f.code.errors">
+    <div *ngIf="f.code.errors.required">Description is required</div>
+  </div>
+</div>
+
+  <button type="submit" class="btn btn-info">Save</button>
+  </form>
+</div>
