@@ -38,12 +38,18 @@ jspm_packages/
 
 # Typescript v1 declaration files
 typings/
+*.tsbuildinfo
 
 # Optional npm cache directory
 .npm
 
 # Optional eslint cache
 .eslintcache
+
+.rpt2_cache/
+.rpt2_cache_cjs/
+.rpt2_cache_es/
+.rpt2_cache_umd/
 
 # Optional REPL history
 .node_repl_history
@@ -56,9 +62,13 @@ typings/
 
 # dotenv environment variables file
 .env
+.enc.test
 
 # next.js build output
 .next
+
+.nuxt
+dist
 
 .vscode/*
 !.vscode/settings.json
